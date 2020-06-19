@@ -129,7 +129,7 @@ export default class Toolbar {
     }
 
     toolbarControls.forEach((t, index) => {
-      if (t.index) {
+      if (t.index !== undefined) {
         Utils.moveIndexInArray(toolbarControls, index, t.index)
       }
     })
